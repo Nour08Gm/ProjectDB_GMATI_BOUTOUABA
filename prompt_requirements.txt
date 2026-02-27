@@ -1,0 +1,12 @@
+You work in the field of book publishing (novels). Your company is involved in the domain of acquiring, editing, producing, and distributing fiction novels in physical and digital formats. It is a publishing company such as Penguin Random House, Hachette Livre, HarperCollins, or Gallimard. The company collects data about authors, manuscript submissions, editorial follow-up, publishing decisions, contracts, books, chapters, and editors. Take inspiration from the following website/presentation/article: 
+https://en.wikipedia.org/wiki/Book_publishing
+https://en.wikipedia.org/wiki/International_Standard_Book_Number
+https://en.wikipedia.org/wiki/Publishing
+
+Your company wants to apply MERISE to design an information system. You are responsible for the analysis part, i.e., gathering the company's requirements. It has called on a computer engineering student to carry out this project, and you must provide him with the necessary information so that he can then apply the following steps of database design and development himself.
+
+First, establish the data business rules for your company in the form of a bulleted list. It must correspond to the information provided by someone who knows how the company works, but not how an information system is built.
+
+Next, based on these rules, provide a raw data dictionary with the following columns, grouped in a table: meaning of the data, type, size in number of characters or digits. There should be between 25 and 35 data items. It is used to provide additional information about each data item (size and type) but without any assumptions about how the data will be modeled later.
+
+Provide the business rules and the data dictionary.
