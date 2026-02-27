@@ -78,4 +78,4 @@
 
 ![MCD Conceptual Data Model for Publishing House](MCD_PublishingHouse%20(looping).png)
 
-(See files: MCD_PublishingHouse.drawio and MCD_PublishingHouse.png)
+(see files: MCD_PublishingHouse.drawio and MCD_PublishingHouse.png. For looping version : MCD_PublishingHouse (looping).png and MCD_PublishingHouse.loo)
