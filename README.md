@@ -87,3 +87,10 @@
 ## LDM
 
 From the CDM we obtain the next LDM :
+- CONTRACT = ( <ins> **ContractID(PK)** </ins>, SignatureDate(date), AdvanceAmount(decimal(10,2)), RoyaltyRate(decimal(5,2)), **#AuthorID(FK)**, **#BookID(FK)** );
+- AUTHOR = ( **AuthorID(PK)**, PenName(varchar(80)), FirstName(varchar(50)), LastName(varchar(60)), Email(varchar(120)), Phone(varchar(20)), Country(varchar(60)), DateOfBirth(date) );
+- BOOK = ( **BookID(PK)**, Title(varchar(180)), PunlicationDate(date), **#ManuscriptID(FK)** );
+- CHAPTER = ( **ChapterNumber(PK)**, Title(varchar(150)), WordCount(int), **#BookID(FK)** );
+- MANUSCRIPT = ( **ManuscriptID(PK)**, Title(varchar(150)), SubmissionDate(date), Status(varchar(30)), WordCount(int), **#AuthorID(FK)**, **#EditorID(FK)** );
+- EDITOR = ( **EditorID(PK)**, FullName(varchar(100)), Role(varchar(40)), **#Editor_1(FK)** );
+- WRITES = ( #AuthorID(FK), #BookID(FK) );
