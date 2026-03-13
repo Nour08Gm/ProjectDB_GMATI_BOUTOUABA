@@ -87,10 +87,10 @@
 ## LDM
 
 From the CDM we obtain the next LDM :
-- CONTRACT = ( <ins> **ContractID(PK)** </ins>, SignatureDate(date), AdvanceAmount(decimal(10,2)), RoyaltyRate(decimal(5,2)), **#AuthorID(FK)**, **#BookID(FK)** );
-- AUTHOR = ( **AuthorID(PK)**, PenName(varchar(80)), FirstName(varchar(50)), LastName(varchar(60)), Email(varchar(120)), Phone(varchar(20)), Country(varchar(60)), DateOfBirth(date) );
-- BOOK = ( **BookID(PK)**, Title(varchar(180)), PunlicationDate(date), **#ManuscriptID(FK)** );
-- CHAPTER = ( **ChapterNumber(PK)**, Title(varchar(150)), WordCount(int), **#BookID(FK)** );
-- MANUSCRIPT = ( **ManuscriptID(PK)**, Title(varchar(150)), SubmissionDate(date), Status(varchar(30)), WordCount(int), **#AuthorID(FK)**, **#EditorID(FK)** );
-- EDITOR = ( **EditorID(PK)**, FullName(varchar(100)), Role(varchar(40)), **#Editor_1(FK)** );
-- WRITES = ( #AuthorID(FK), #BookID(FK) );
+- CONTRACT = ( <ins> **ContractID(PK)** </ins>, SignatureDate(date), AdvanceAmount(decimal(10,2)), RoyaltyRate(decimal(5,2)), <ins> **#AuthorID(FK)** </ins>, <ins> **#BookID(FK)** </ins> );
+- AUTHOR = ( <ins> **AuthorID(PK)** </ins>, PenName(varchar(80)), FirstName(varchar(50)), LastName(varchar(60)), Email(varchar(120)), Phone(varchar(20)), Country(varchar(60)), DateOfBirth(date) );
+- BOOK = ( <ins> **BookID(PK)** </ins>, Title(varchar(180)), PunlicationDate(date), <ins> **#ManuscriptID(FK)** </ins> );
+- CHAPTER = ( <ins> **ChapterNumber(PK)** </ins>, Title(varchar(150)), WordCount(int), <ins> **#BookID(FK)** </ins> );
+- MANUSCRIPT = ( <ins> **ManuscriptID(PK)** </ins>, Title(varchar(150)), SubmissionDate(date), Status(varchar(30)), WordCount(int), <ins> **#AuthorID(FK)** </ins>, <ins> **#EditorID(FK)** </ins> );
+- EDITOR = ( <ins> **EditorID(PK)** </ins>, FullName(varchar(100)), Role(varchar(40)), <ins> **#Editor_1(FK)** </ins> );
+- WRITES = ( <ins> **#AuthorID(FK)** </ins>, <ins> **#BookID(FK)** </ins> );
