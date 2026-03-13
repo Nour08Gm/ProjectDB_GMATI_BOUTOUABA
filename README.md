@@ -79,3 +79,11 @@
 ![MCD Conceptual Data Model for Publishing House](MCD_PublishingHouse%20(looping).png)
 
 (see files: MCD_PublishingHouse.drawio and MCD_PublishingHouse.png. For looping version : MCD_PublishingHouse (looping).png and MCD_PublishingHouse.loo)
+
+---
+
+# Step 3 – LDM & PDM
+
+## LDM
+
+From the CDM we obtain the next LDM :
