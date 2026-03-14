@@ -122,3 +122,51 @@ Find it in the file prompt_script.txt
 
 ## SQL script obtained
 Find it in the file 3_insertion.sql
+
+---
+
+# Step 5 – Querying the Database
+
+## Usage Scenario
+
+An editorial manager uses the database to monitor the activity of the publishing house.
+
+They need to retrieve information about authors, manuscripts, books, editors, contracts and chapters in order to analyze the publishing workflow.
+
+## SQL Queries
+
+The file `4_interrogation.sql` contains several SQL queries used to analyze the database.
+
+These queries include:
+
+- simple selections
+- join queries between related tables
+- aggregation queries using `GROUP BY` and `HAVING`
+- subqueries
+
+These queries demonstrate how the database can support decision-making within the publishing house, such as tracking manuscripts, identifying responsible editors, analyzing contracts, and examining book structure through chapters.
+
+---
+
+# Step 6 – Video Presentation
+
+## Project Overview
+
+This project presents a relational database system designed for a publishing house.
+
+The database manages authors, manuscripts, editors, books, contracts and chapters.
+
+## Demonstration
+
+During the video presentation we demonstrate:
+
+- the conceptual data model (MCD)
+- the logical and physical database structure
+- the data insertion process
+- several SQL queries used to analyze the database
+
+The demonstration shows how the system allows the publishing house to manage manuscripts, track authors and editors, and analyze published books and contracts.
+
+## Conclusion
+
+This database provides a structured way to manage the publishing process while ensuring data integrity through constraints and relational links between entities.
