@@ -94,3 +94,21 @@ From the CDM we obtain the next LDM :
 - MANUSCRIPT = ( <ins> **ManuscriptID(PK)** </ins>, Title(varchar(150)), SubmissionDate(date), Status(varchar(30)), WordCount(int), <ins> **#AuthorID(FK)** </ins>, <ins> **#EditorID(FK)** </ins> );
 - EDITOR = ( <ins> **EditorID(PK)** </ins>, FullName(varchar(100)), Role(varchar(40)), <ins> **#Supervisor(FK)** </ins> );
 - WRITES = ( <ins> **#AuthorID(FK)** </ins>, <ins> **#BookID(FK)** </ins> );
+
+## PDM
+
+See the two SQL files for creating the tables (1_creation.sql) and adding constraints (2_contraintes.sql).
+
+Here is a table listing the constraints :
+| Table | Constraint | Purpose |
+|--------|------------|---------|
+| Author | Email format | Prevent invalid emails |
+| Author | Birthdate | Prevent unrealistic birth dates |
+| Manuscript | Statut | Restricts to only allowed values |
+| Manuscript | WordCount | Must be positive |
+| Book | PublicationDate | Avoid unrealistic dates |
+| Chapter | ChapterNumber | Chapter numbering starts at 1 |
+| Chapter | WordCount | Must be positive |
+| Contract | AdvanceAmount | Cannot be negative |
+| Contract | RoyaltyRate | Between 0 and 100 |
+| Contract | SignatureDate | prevents unrealistic contract dates |
