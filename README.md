@@ -117,7 +117,7 @@ Here is a table listing the constraints :
 
 # Step 4 – Inserting Data
 
-## Prompt used :
+## Prompt used
 Find it in the file prompt_script.txt
 
 ## SQL script obtained
