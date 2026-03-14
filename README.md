@@ -92,5 +92,5 @@ From the CDM we obtain the next LDM :
 - BOOK = ( <ins> **BookID(PK)** </ins>, Title(varchar(180)), PunlicationDate(date), <ins> **#ManuscriptID(FK)** </ins> );
 - CHAPTER = ( <ins> **ChapterNumber(PK)** </ins>, Title(varchar(150)), WordCount(int), <ins> **#BookID(PK, FK)** </ins> );
 - MANUSCRIPT = ( <ins> **ManuscriptID(PK)** </ins>, Title(varchar(150)), SubmissionDate(date), Status(varchar(30)), WordCount(int), <ins> **#AuthorID(FK)** </ins>, <ins> **#EditorID(FK)** </ins> );
-- EDITOR = ( <ins> **EditorID(PK)** </ins>, FullName(varchar(100)), Role(varchar(40)), <ins> **#Editor_1(FK)** </ins> );
+- EDITOR = ( <ins> **EditorID(PK)** </ins>, FullName(varchar(100)), Role(varchar(40)), <ins> **#Supervisor(FK)** </ins> );
 - WRITES = ( <ins> **#AuthorID(FK)** </ins>, <ins> **#BookID(FK)** </ins> );
