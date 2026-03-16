@@ -13,21 +13,21 @@
 
 ## Business Rules  
 
-- The publishing house signs contracts with authors to publish books.
-- An author can write several books, and a book must have at least one author.
 - Authors submit manuscripts to the publishing house.
-- Each manuscript is submitted by exactly one author.
 - Each manuscript is managed by one editor.
-- An editor can manage several manuscripts.
-- Editors are organized hierarchically: an editor may supervise several editors, but has at most one direct supervisor.
 - A manuscript may be accepted or rejected.
 - If accepted, a manuscript becomes a published book.
+- An author can write several books, and a book must have at least one author.
+- Each book is associated with exactly one contract.
+- A book is composed of chapters.
+- Editors are organized hierarchically: an editor may supervise several editors, but has at most one direct supervisor.
+- The publishing house signs contracts with authors to publish books.
+- Each manuscript is submitted by exactly one author.
+- An editor can manage several manuscripts.
 - A book originates from exactly one manuscript.
 - Each published book has a title and a publication date.
-- Each book is associated with exactly one contract.
 - A contract includes a signature date, an advance payment amount, and a royalty rate.
 - A contract is signed by one author and concerns one book.
-- A book is composed of chapters.
 - A chapter is identified only within a specific book by its chapter number.
 - A book must contain at least one chapter.
 
